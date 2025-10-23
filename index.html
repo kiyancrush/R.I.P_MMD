@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memory of Mammad Triaki</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen relative overflow-x-hidden">
+    <!-- Cobweb elements -->
+    <div class="cobweb cobweb-top-left"></div>
+    <div class="cobweb cobweb-top-right"></div>
+    <div class="cobweb cobweb-bottom-left"></div>
+    <div class="cobweb cobweb-bottom-right"></div>
+
+    <main class="container mx-auto px-4 py-12 flex flex-col items-center">
+        <div class="max-w-2xl w-full text-center">
+            <!-- Memorial Image -->
+            <div class="relative mb-8 group">
+                <img src="https://s6.uupload.ir/files/img_20251023_231742_569_d4c8.jpg" 
+                     alt="Mammad Triaki Memorial" 
+                     class="w-full h-auto rounded-lg shadow-2xl border-4 border-gray-700 transform transition duration-500 group-hover:scale-101">
+                <div class="absolute inset-0 bg-black bg-opacity-30 rounded-lg opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                    <i data-feather="heart" class="text-red-500 w-16 h-16 animate-pulse"></i>
+                </div>
+            </div>
+
+            <!-- Memorial Text -->
+            <div class="bg-gray-800 bg-opacity-70 p-8 rounded-lg border border-gray-700 shadow-lg backdrop-blur-sm">
+                <h1 class="text-4xl font-bold mb-6 text-white font-serif">Mammad Triaki</h1>
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p class="text-red-300 animate-pulse">دوستان عزیز ممد تریاکی همیشه در ذهن و قلب ما زنده خواهد ماند💔🖤</p>
+                    <p class="text-gray-400">و امیدواریم مسئول از بین رفتن آن با بدترین مجازات ها رو به شود😓😢</p>
+                    <div class="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent my-6"></div>
+                    <p class="text-white italic">خدانگهدار برای همیشه دوستان عزیز👋</p>
+                    <p class="text-gray-300">همه شما در قلب من جا داشتید</p>
+                    <p class="text-right mt-8 text-gray-400">-ممد تریاکی</p>
+                </div>
+            </div>
+
+            <!-- Memorial Candle -->
+            <div class="mt-12 flex justify-center">
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wax"></div>
+                    <div class="base"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+        // Animate cobwebs
+        gsap.to(".cobweb-top-left", {rotation: -5, duration: 5, yoyo: true, repeat: -1});
+        gsap.to(".cobweb-top-right", {rotation: 5, duration: 4, yoyo: true, repeat: -1});
+        gsap.to(".cobweb-bottom-left", {rotation: -3, duration: 6, yoyo: true, repeat: -1});
+        gsap.to(".cobweb-bottom-right", {rotation: 3, duration: 5, yoyo: true, repeat: -1});
+    </script>
+</body>
+</html>
